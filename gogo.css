@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+}
+
+header {
+    border: 2px solid green;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+
+
+}
+
+.gogoheader {
+    max-width: 1180px;
+
+    width: 100%;
+
+}
+
+.navleft,
+.list {
+    border: 2px solid red;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.menu {
+    border: 2px solid green;
+
+    text-align: center;
+}
