@@ -1,6 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 :root {
@@ -54,6 +55,9 @@ nav {
     align-items: center;
 }
 
+#searchbar {
+    cursor: pointer;
+}
 
 
 .menu {
@@ -61,7 +65,7 @@ nav {
     display: flex;
     text-align: center;
     gap: 10px;
-
+    cursor: pointer;
 
 }
 
@@ -85,28 +89,142 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    cursor: pointer;
 }
+
+.medeedropdown,
+.bulandropdown,
+.uzehdropdown,
+.hevmayagdropdown {
+    display: flex;
+    gap: 20px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 35px;
+    left: -10px;
+    background-color: #fff;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, .15);
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 40px;
+    text-align: start;
+    opacity: 0;
+    transition: 0.2s linear;
+
+}
+
+.weatherdropdown {
+    display: flex;
+
+    border: 1px solid rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 55px;
+    right: -10px;
+    background-color: #fff;
+    box-shadow: 0 5px 22px rgba(0, 0, 0, .15);
+    border-radius: 5px;
+    text-align: center;
+    background-color: grey;
+    color: #fff;
+    opacity: 0;
+    transition: 0.2s linear;
+    padding: 10px;
+    font-size: small;
+
+}
+
+.weather {
+    position: relative;
+}
+
+
+.submenu li {
+    display: flex;
+
+
+}
+
+.submenu ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 110px;
+
+
+
+
+}
+
+#medee,
+#bulan,
+#uzeh,
+#hevmayag {
+
+    position: relative;
+}
+
+
+
+
+
 
 /* header part*/
 
-/* main part*/
-main {
-    border: 2px solid red;
+/* header hover*/
+
+#medee:hover .medeedropdown {
+    opacity: 1;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
+}
+
+#bulan:hover .bulandropdown {
+    opacity: 1;
+    display: flex;
+}
+
+#uzeh:hover .uzehdropdown {
+    opacity: 1;
+    display: flex;
+}
+
+#hevmayag:hover .hevmayagdropdown {
+    opacity: 1;
+    display: flex;
+}
+
+.weather:hover .weatherdropdown {
+    opacity: 1;
+    display: flex;
+}
+
+.submenu li:hover {
+    transition: 0.3s;
+    color: blue;
 }
 
 
-.maincontainer {
+/* header hover*/
 
+
+
+
+
+
+/* main part*/
+/*section1*/
+.maincontainer {
+    border: 2px solid blue;
     max-width: 1180px;
     width: 100%;
-    border: 2px solid green;
+
     padding-left: 40px;
     padding-right: 40px;
-
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
 .section1 {
@@ -145,10 +263,15 @@ main {
     background: linear-gradient(129deg, #c40097, #d6710b);
     font-weight: var(--font-weight);
     border-radius: 100px;
-    width: fit-content;
+    width: 70px;
     color: white;
     padding: 8px 15px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
 
+#biznesbutton:hover {
+    width: 80px;
 }
 
 .articleimg {
@@ -165,6 +288,24 @@ main {
     padding: 5px 10px;
 }
 
+/*section1*/
+
+
+/*section2*/
+.article1 img {
+    width: 264px;
+    height: 175px;
+    border-radius: 8px;
+}
+
+.section2 {
+    border: 2px solid red;
+    display: grid;
+    grid-template-columns: 264px 264px 264px;
+
+}
+
+/*section2*/
 
 
 
