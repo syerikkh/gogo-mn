@@ -110,7 +110,8 @@ nav {
     padding-right: 40px;
     text-align: start;
     opacity: 0;
-    transition: 0.2s linear;
+
+
 
 }
 
@@ -200,8 +201,10 @@ nav {
 }
 
 .submenu li:hover {
-    transition: 0.3s;
+    transition: 0.3s ease-in-out;
     color: blue;
+    transform: translateX(3px);
+
 }
 
 
@@ -298,16 +301,212 @@ nav {
     border-radius: 8px;
 }
 
+.article1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .section2 {
     border: 2px solid red;
     display: grid;
-    grid-template-columns: 264px 264px 264px;
+    grid-template-columns: 278px 278px 278px 278px;
+    background: linear-gradient (180deg, #fff, #f7f7f7)
+}
+
+.article5 img {
+    border-radius: 8px;
+}
+
+.articletxt {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.shareandcomment {
+    color: #c6c6c6;
+    font-size: 13px;
+    display: flex;
+    gap: 10px;
+}
+
+.buttonimages {
+    position: relative;
+
+
+}
+
+.article5 {
+    position: relative;
+}
+
+.buttonimages img {
+    position: absolute;
+
+    width: 263px;
+    height: 260px;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 8px;
+    right: 25px;
+
+
+}
+
+.buttons button {
+    background-color: turquoise;
+    height: 6px;
+    width: 3px;
+
 
 }
 
 /*section2*/
 
+/*gogo story*/
+.gogostory {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
+.title {
+    font-size: 26px;
+    font-weight: 700;
+    color: #000;
+}
+
+.bluetext {
+    color: #fff;
+    background-color: #00b0f4;
+    border-radius: 3px;
+    padding: 2px 3px;
+}
+
+.stories {
+    display: grid;
+    grid-template-columns: 170px 170px 170px 170px 170px 170px 170px 170px 170px 170px;
+    grid-template-rows: 235px 235px 235px 235px 235px 235px 235px 235px 235px 235px;
+    gap: 13px;
+    overflow-x: scroll;
+
+}
+
+.story {
+    padding: 10px;
+    display: flex;
+
+
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    position: relative;
+}
+
+#story1 {
+    background-image: url(gogostory1.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#story2 {
+    background-image: url(gogostory2.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#story3 {
+    background-image: url(gogostory3.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#story4 {
+    background-image: url(gogostory5.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#story5 {
+    background-image: url(gogostory6.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#story6 {
+    background-image: url(gogostory7.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#story7 {
+    background-image: url(gogostory8.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#story8 {
+    background-image: url(gogostory7.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#story9 {
+    background-image: url(gogostory9.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+#story10 {
+    background-image: url(gogostory10.jpeg);
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.storytext {
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+
+    width: 150px;
+    height: 37px;
+    overflow: hidden;
+}
+
+.views {
+    font-size: 12px;
+    color: #fff;
+    display: flex;
+    gap: 5px;
+}
+
+.storytext:hover {
+    overflow: visible;
+    transform: translateY(-40px);
+    transition: 0.5s ease-in-out;
+
+}
+
+.gogologo img {
+    width: 30px;
+    height: 30px;
+}
+
+.gogologo {
+    display: flex;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+
+}
+
+
+
+
+/*gogo story*/
 
 
 
