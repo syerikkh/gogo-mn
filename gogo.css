@@ -459,9 +459,7 @@ select {
     background: linear-gradient (180deg, #fff, #f7f7f7)
 }
 
-.article5 img {
-    border-radius: 8px;
-}
+
 
 .articletxt {
     font-size: 14px;
@@ -475,37 +473,68 @@ select {
     gap: 10px;
 }
 
-.buttonimages {
-    position: relative;
 
 
+.article5 img {
+    border-radius: 8px;
 }
 
 .article5 {
     position: relative;
-}
-
-.buttonimages img {
-    position: absolute;
-
+    border: 2px solid red;
     width: 263px;
     height: 260px;
+    border-radius: 8px;
 }
 
-.buttons {
+#image1,
+#image2,
+#image3 {
+    width: 100%;
+    height: 100%;
     position: absolute;
-    bottom: 8px;
-    right: 25px;
-
 
 }
 
-.buttons button {
-    background-color: turquoise;
-    height: 6px;
-    width: 3px;
+#image1 {
+    z-index: 1;
+
+}
+
+#image2 {
+    z-index: 2;
+    display: none;
+}
+
+#image3 {
+    z-index: 3;
+    display: none;
+}
 
 
+#button1 {
+    position: absolute;
+    z-index: 4;
+    bottom: 2px;
+    right: 35px;
+}
+
+#button2 {
+    position: absolute;
+    z-index: 4;
+    bottom: 2px;
+    right: 20px;
+}
+
+#button3 {
+    position: absolute;
+    z-index: 4;
+    bottom: 2px;
+    right: 5px;
+}
+
+#button2:checked+label {
+    display: block;
 }
 
 /*section2*/
@@ -805,6 +834,108 @@ select {
 }
 
 /*calendar*/
+
+/*ontsloh*/
+.section4 {
+    display: flex;
+
+
+}
+
+.ontsloh {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ontslohtitle {
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+    color: #000;
+    display: flex;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 700;
+
+
+    align-items: center;
+}
+
+.ontslohtitle img {
+    width: 25px;
+    height: 30px;
+}
+
+.ontslohpic {
+    border-radius: 8px;
+    overflow: hidden;
+
+
+    width: 290px;
+    height: 170px;
+    position: relative;
+    cursor: pointer;
+}
+
+.ontslohmiddle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(34, 34, 34, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    opacity: 0;
+}
+
+.ontslohpic img {
+    width: 100%;
+    height: 100%;
+}
+
+.ontsloharticles {
+
+    padding-left: 40px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+
+
+}
+
+.ontslohtext {
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.ontslohicons {
+
+    font-size: 12px;
+    color: #888;
+    display: flex;
+    gap: 20px;
+}
+
+.icon {
+    display: flex;
+
+    align-items: center;
+}
+
+.ontslohpic:hover .ontslohmiddle {
+    opacity: 1;
+    transition: 0.3s ease;
+}
+
+/*ontsloh*/
 
 
 
