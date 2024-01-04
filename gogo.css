@@ -9,6 +9,9 @@
 }
 
 /* header part*/
+body {
+    width: 100vw;
+}
 
 .gogocontainer {
 
@@ -103,7 +106,7 @@ select {
     left: 130px;
     bottom: 10px;
     border-radius: 4px;
-    border: 1px solid blue;
+
     display: none;
     padding-left: 10px;
 }
@@ -242,10 +245,9 @@ select {
 /* main part*/
 /*section1*/
 .maincontainer {
-    border: 2px solid blue;
+
     max-width: 1180px;
     width: 100%;
-
     padding-left: 40px;
     padding-right: 40px;
     margin: auto;
@@ -551,6 +553,8 @@ input
     font-size: 26px;
     font-weight: 700;
     color: #000;
+    padding-bottom: 20px;
+
 }
 
 .bluetext {
@@ -1228,10 +1232,326 @@ input
     padding: 2px 3px;
 }
 
-.bluetext jajaja
 /*hevmayag*/
+.slide {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+}
+
+.slide img {
+    width: 210px;
+    height: 230px;
+    border-radius: 8px;
+}
 
 
-
+.hevmayagText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    width: 209px;
+    height: 129px;
+}
 
 /* main part*/
+
+.entertainment {
+    position: relative;
+    margin-left: -82px;
+    width: 100vw;
+    background-color: #1a1a1a;
+    padding: 50px 80px 50px 80px;
+}
+
+.uzeh p {
+    color: white;
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+}
+
+.uzeh {
+    display: flex;
+    gap: 5px;
+}
+
+.videos img {
+    width: 241px;
+    height: 170px;
+
+}
+
+.videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 38px;
+}
+
+.videosPhoto {
+    position: relative;
+}
+
+.videoCard {
+    cursor: pointer;
+}
+
+.uzehHeader img {
+    width: 45px;
+    height: 35px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.videos p {
+    color: white;
+    max-width: 249px;
+    font-size: 14px;
+    font-weight: 550;
+}
+
+.entertainmentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.gogoFooterLogo img {
+    width: 120px;
+    height: 39px;
+}
+
+.aboutGogo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerText {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.gogoFooter {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.footerContact {
+    border-top: 1px solid grey;
+    padding-top: 60px;
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerIcons {
+    cursor: pointer;
+    color: #888;
+}
+
+.footerIcons:hover {
+    color: #000;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+    body {
+        width: 100%;
+
+    }
+
+    .maincontainer {
+        padding: 0;
+
+    }
+
+    .stories {
+        max-width: 414px;
+    }
+
+    .logo img {
+        width: 70px;
+        height: 23px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    #searchbar {
+        display: none;
+    }
+
+    .navrighttxt {
+        display: flex;
+        font-size: 10px;
+    }
+
+    .navrightnumber h3 {
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .navcontainer {
+        width: 100%;
+    }
+
+    .section1 img {
+        width: 414px;
+        height: 310px;
+        position: relative;
+    }
+
+    .article {
+        position: absolute;
+        left: 50px;
+        top: 200px;
+        z-index: 2;
+
+    }
+
+    .article h1 {
+        font-size: 18px;
+        color: white;
+    }
+
+    .article p {
+        display: none;
+    }
+
+    .middle {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+        opacity: 1;
+    }
+
+
+    .middletext {
+        display: none;
+    }
+
+    .section2 {
+        display: none;
+    }
+
+    .gogostory {
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+
+    .calendar {
+        display: none;
+    }
+
+    .section4 {
+        margin-left: 10px;
+    }
+
+    .calendarartimg img {
+        width: 105px;
+        height: 110px;
+    }
+
+    .calendarart {
+        display: flex;
+        gap: 10px;
+    }
+
+    .calendararttitle {
+        font-size: 15px;
+        width: 280px;
+    }
+
+    .calendarartpara {
+        display: none;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .middlepic img {
+        display: none;
+    }
+
+    .seemore {
+        width: 70%;
+    }
+
+    .ontsloh {
+        display: none;
+    }
+
+    .grid1 {
+        display: none;
+    }
+
+    .interview {
+        padding-left: 10px;
+    }
+
+    .grid2 img {
+        width: 384px;
+        height: 350px;
+    }
+
+    .grid2 {
+        padding-left: 5px;
+    }
+
+    .gogohevmayag {
+        padding-left: 10px;
+    }
+
+    .entertainment {
+        margin: 0;
+        padding: 10px 10px 10px 10px;
+    }
+
+    .videosPhoto img {
+        width: 384px;
+        height: 170px;
+
+    }
+
+    .videos {
+        padding-left: 5px;
+    }
+
+    .uzehHeader img {
+        width: 49px;
+        height: 38px;
+    }
+
+    .aboutGogo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .footerText {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footerContact {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .slide {
+        max-width: 414px;
+    }
+}
